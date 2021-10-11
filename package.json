@@ -1,13 +1,13 @@
 {
   "name": "webdriverio6-appium-mocha-boilerplate",
   "version": "1.0.0",
-  "description":  "Boilerplate project to run native and browser for android and ios using mocha with page object pattern",
+  "description": "Boilerplate project to run native and browser for android and ios using mocha with page object pattern",
   "scripts": {
     "ios": "wdio ./config/ios.config.js",
     "android": "wdio ./config/android.config.js",
     "iosBrowser": "wdio ./config/iosBrowser.config.js",
     "androidBrowser": "wdio ./config/androidBrowser.config.js",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "allure": "allure generate ./reports/allure/allure-results && allure open --clean"
   },
   "keywords": [
@@ -19,7 +19,7 @@
     "native apps",
     "mobile browser"
   ],
-  "author":  "Arjun Annamalai - arjun1120@gmail.com",
+  "author": "Arjun Annamalai - arjun1120@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@wdio/allure-reporter": "^6.1.14",
@@ -34,5 +34,8 @@
     "eslint": "^7.3.0",
     "wdio-chromedriver-service": "^6.0.3",
     "wdio-json-reporter": "^2.0.0"
+  },
+  "dependencies": {
+    "path": "^0.12.7"
   }
 }

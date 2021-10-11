@@ -6,6 +6,7 @@ class ActionHelper {
 
     static getTitle() {
         return browser.getTitle();
+        
     }
 
     static launchApp() {
@@ -16,7 +17,7 @@ class ActionHelper {
         browser.switchContext('NATIVE_APP');
     }
 
-    static pause(seconds) {
+    static pauseFor(seconds) {
         browser.pause(seconds * 1000);
     }
 

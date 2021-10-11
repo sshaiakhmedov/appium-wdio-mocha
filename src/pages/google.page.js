@@ -1,17 +1,17 @@
-const ActionHelper = require('./../helpers/actionHelpers');
+const ActionHelper = require('../helpers/actionHelpers');
 
 class GooglePage {
 
     getObjectLocator() {
-        return require('./../screens/web/google.screen.js');
+        return require('../screens/web/google.screen.js');
     }
 
     launchGoogle() {
         ActionHelper.launchBrowserUrl(this.getObjectLocator().googleUrl);
-        ActionHelper.pause(2);
+        ActionHelper.pauseFor(2);
     }
 
-    getGoogleTitle() {
+    getTitle() {
         return ActionHelper.getTitle();
     }
 }

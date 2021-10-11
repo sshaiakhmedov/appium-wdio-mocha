@@ -9,7 +9,7 @@ class SettingsPage{
     launchApp() {
         ActionHelper.launchApp();
         ActionHelper.switchToNativeContext();
-        ActionHelper.pause(2);
+        ActionHelper.pauseFor(2);
     }
 
     getGeneralTabText() {
