@@ -13,6 +13,14 @@ class ActionHelper {
         driver.launchApp();
     }
 
+    static closeApp() {
+        driver.closeApp();
+    }
+
+    static removeApp() {
+        driver.removeApp()
+    }
+
     static switchToNativeContext() {
         browser.switchContext('NATIVE_APP');
     }
